@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/founders/:slug", "destination": "/index.html" },
+    { "source": "/projects/:slug", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/admin/:path*", "destination": "/index.html" }
+  ]
+}

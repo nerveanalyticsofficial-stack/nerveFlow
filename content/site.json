@@ -1,0 +1,132 @@
+{
+  "brand": {
+    "name": "nerve analytics",
+    "eyebrow": "BUSINESS SYSTEMS, BUILT WITH INTENT",
+    "email": "hello@nerveanalytics.com",
+    "phone": "",
+    "whatsapp": "",
+    "bookingUrl": "",
+    "location": "Pakistan · Working globally"
+  },
+  "hero": {
+    "eyebrow": "YOUR OPERATIONS, IN SYNC",
+    "title": "Make the moving parts of your business work together.",
+    "description": "We design automation, booking experiences, and live dashboards that give growing teams more clarity and less manual work.",
+    "primaryCta": "Start a conversation",
+    "secondaryCta": "Explore our work",
+    "footnote": "Strategy, systems, and software that move with you.",
+    "bottomLine": "BUILT FOR BUSINESSES READY TO MOVE FORWARD"
+  },
+  "intro": {
+    "eyebrow": "WHAT WE DO",
+    "title": "Better systems. Better days at work.",
+    "description": "Nerve Analytics is a technology studio focused on the everyday problems that slow businesses down. We connect customer conversations, appointments, team workflows, and decision making in one thoughtful system.",
+    "statement": "Technology should make the next decision clearer."
+  },
+  "services": [
+    {
+      "id": "ai-automation",
+      "number": "01",
+      "title": "AI & workflow automation",
+      "summary": "Reduce repetitive work with practical automations designed around how your team actually operates.",
+      "details": "From lead handling and follow ups to routine internal tasks, we map the process first and then build an automation that fits."
+    },
+    {
+      "id": "whatsapp",
+      "number": "02",
+      "title": "WhatsApp experiences",
+      "summary": "Turn a familiar customer channel into a more responsive way to answer, schedule, and follow up.",
+      "details": "We create guided WhatsApp journeys for inquiries, appointment reminders, and customer communication."
+    },
+    {
+      "id": "booking",
+      "number": "03",
+      "title": "Booking & operations",
+      "summary": "Give customers a smooth way to book and your team a clear view of what is happening next.",
+      "details": "Scheduling, availability, confirmations, and day to day operations can work in one connected flow."
+    },
+    {
+      "id": "dashboards",
+      "number": "04",
+      "title": "Live business dashboards",
+      "summary": "See the numbers and activity that matter while there is still time to act on them.",
+      "details": "We build focused dashboards for bookings, performance, and operational visibility instead of overwhelming reports."
+    }
+  ],
+  "servicesIntro": {
+    "eyebrow": "OUR EXPERTISE",
+    "title": "What we can build",
+    "accent": "together.",
+    "description": "Useful technology should feel like a natural extension of your business. These are the systems we focus on."
+  },
+  "workIntro": {
+    "eyebrow": "SELECTED WORK",
+    "title": "Built for the way real businesses run.",
+    "description": "A look at the types of systems we have created across service businesses and retail operations."
+  },
+  "projects": [
+    {
+      "id": "gym-automation",
+      "slug": "gym-automation",
+      "category": "FITNESS OPERATIONS",
+      "title": "A more connected gym experience",
+      "short": "An operations system bringing memberships, defaulter tracking, and online appointments into a clearer daily workflow.",
+      "description": "We built a gym automation system to help teams manage memberships, track payment defaulters, and handle online appointments in one place. The project focused on reducing scattered admin work and making day to day operations easier to follow.",
+      "features": ["Membership administration", "Payment defaulter tracking", "Online appointments", "Operational visibility"],
+      "accent": "mint",
+      "image": ""
+    },
+    {
+      "id": "retail-management",
+      "slug": "retail-management",
+      "category": "RETAIL MANAGEMENT",
+      "title": "Business management for tires & alarms",
+      "short": "A tailored management system for a business operating across the tires and alarms market.",
+      "description": "We created business management software for a company in the tires and alarms market. The system was built around its specific operational needs, giving the team a more organized way to manage business activity.",
+      "features": ["Tailored business workflows", "Centralized management", "Operational organization"],
+      "accent": "lavender",
+      "image": ""
+    },
+    {
+      "id": "beauty-automation",
+      "slug": "beauty-automation",
+      "category": "BEAUTY & WELLNESS",
+      "title": "Smoother salon & clinic operations",
+      "short": "Automation shaped for salons, beauty salons, and beauty clinics.",
+      "description": "We have developed automation for salon and beauty clinic workflows. The work addresses the coordination and recurring tasks involved in managing a service based business and its appointments.",
+      "features": ["Service business workflows", "Appointment coordination", "Operational automation"],
+      "accent": "peach",
+      "image": ""
+    }
+  ],
+  "approach": {
+    "eyebrow": "OUR APPROACH",
+    "title": "We start with the work, not the software.",
+    "description": "Every useful system starts by understanding the people and processes behind it. We look at the friction, design a simpler flow, and build technology your team can actually use.",
+    "steps": [
+      { "title": "Understand", "text": "We learn how your business works and where time or information gets lost." },
+      { "title": "Design", "text": "We shape a clear solution around your priorities and your customers." },
+      { "title": "Build", "text": "We put the system into practice, refine it, and make it ready for daily use." }
+    ]
+  },
+  "foundersIntro": {
+    "eyebrow": "THE PEOPLE BEHIND NERVE",
+    "title": "A founding team that builds with you.",
+    "description": "We are three founders with a shared focus on useful technology and lasting client relationships. Individual introductions will be added here soon."
+  },
+  "founders": [
+    { "id": "founder-1", "slug": "founder-1", "name": "Founder profile 01", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false },
+    { "id": "founder-2", "slug": "founder-2", "name": "Founder profile 02", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false },
+    { "id": "founder-3", "slug": "founder-3", "name": "Founder profile 03", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false }
+  ],
+  "contact": {
+    "eyebrow": "LET'S TALK",
+    "title": "Your next chapter deserves a better system.",
+    "description": "Tell us what you are trying to improve. We will help you find a practical place to start.",
+    "button": "Email our team"
+  },
+  "footer": {
+    "tagline": "Thoughtful technology for the way business really works.",
+    "copyright": "Nerve Analytics"
+  }
+}

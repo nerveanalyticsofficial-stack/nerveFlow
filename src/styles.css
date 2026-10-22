@@ -5,3 +5,5 @@
 
 
 @media(max-width:360px){.visual-wrap{transform:scale(.47);height:280px;margin-bottom:-65px}.hero-actions{gap:16px}.button{gap:15px}}
+
+.password-input{position:relative;display:flex;align-items:center}.password-input input{padding-right:47px}.password-input button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#527562;width:34px;height:34px;display:grid;place-items:center}.password-input button:hover{color:#1d5a46}

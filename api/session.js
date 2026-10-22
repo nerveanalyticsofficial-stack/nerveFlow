@@ -3,10 +3,17 @@ import { cookieHeader, isAuthenticated, makeSession, matchesPassword, readBody, 
 const attempts = new Map()
 
 export default async function handler(req, res) {
-  if (req.method === 'GET') return send(res, 200, { authenticated: isAuthenticated(req), configured: Boolean(process.env.ADMIN_PASSWORD && process.env.SESSION_SECRET && process.env.GITHUB_TOKEN) })
+  if (req.method === 'GET') return send(res, 200, {
+    authenticated: isAuthenticated(req),
+    passwordConfigured: Boolean(process.env.ADMIN_PASSWORD),
+    sessionConfigured: (process.env.SESSION_SECRET || '').length >= 32,
+    contentConfigured: Boolean(process.env.GITHUB_TOKEN),
+  })
   if (!sameOrigin(req)) return send(res, 403, { error: 'Invalid request origin.' })
   if (req.method === 'DELETE') return send(res, 200, { authenticated: false }, { 'Set-Cookie': cookieHeader('', req).replace('Max-Age=604800', 'Max-Age=0') })
   if (req.method !== 'POST') return send(res, 405, { error: 'Method not allowed.' })
+  if (!process.env.ADMIN_PASSWORD) return send(res, 503, { error: 'ADMIN_PASSWORD is missing from this deployment. Add it in Vercel and redeploy.' })
+  if ((process.env.SESSION_SECRET || '').length < 32) return send(res, 503, { error: 'SESSION_SECRET must contain at least 32 characters. Add it in Vercel and redeploy.' })
   try {
     const ip = String(req.headers['x-forwarded-for'] || req.socket?.remoteAddress || 'unknown').split(',')[0]
     const record = attempts.get(ip) || { count: 0, until: 0 }

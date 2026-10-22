@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     if (!isAuthenticated(req)) return send(res, 401, { error: 'Sign in to save changes.' })
     if (!sameOrigin(req)) return send(res, 403, { error: 'Invalid request origin.' })
     const { content, sha } = await readBody(req)
-    if (!content || typeof content !== 'object' || Array.isArray(content) || !content.brand || !content.hero || !Array.isArray(content.services) || !Array.isArray(content.projects) || !Array.isArray(content.founders)) return send(res, 400, { error: 'Website content is incomplete.' })
+    if (!content || typeof content !== 'object' || Array.isArray(content) || !content.brand || !content.hero || !Array.isArray(content.services) || !Array.isArray(content.projects)) return send(res, 400, { error: 'Website content is incomplete.' })
     if (typeof sha !== 'string' || !sha) return send(res, 409, { error: 'Refresh the editor before saving.' })
     const newSha = await saveContent(content, sha)
     return send(res, 200, { saved: true, sha: newSha })

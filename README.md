@@ -1,6 +1,6 @@
 # Nerve Analytics website
 
-A portfolio website for Nerve Analytics with an editor at `/admin`. The public site presents services, selected projects, the founding team, and contact information. Each project and published founder has a dedicated page.
+A portfolio website for Nerve Analytics with an editor at `/admin`. The public site presents services, selected projects, and contact information. Each project has a dedicated page.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Open the local URL printed by Vite. The public website reads `content/site.json`
 
    | Variable | Value |
    | --- | --- |
-   | `ADMIN_PASSWORD` | A unique password of at least 12 characters |
+   | `ADMIN_PASSWORD` | Your admin password; use at least 12 characters for security |
    | `SESSION_SECRET` | A random secret of at least 32 characters |
    | `GITHUB_TOKEN` | A fine-grained GitHub token with **Contents: Read and write** access to this repository |
    | `GITHUB_OWNER` | `nerveanalyticsofficial-stack` |
@@ -31,7 +31,7 @@ The admin saves edits to `content/site.json` through the GitHub API. Public page
 
 ## Before sharing with clients
 
-The founder names, biographies, photos, contact email, WhatsApp number, and booking link were not provided in the brief. The three founder records are ready in the admin but unpublished. Complete them and toggle each profile on. Replace the provisional contact email before using the site with clients. The reference to “RHS dominoles” needs clarification before it can be described accurately.
+The WhatsApp number and booking link were not provided in the brief. The reference to “RHS dominoles” needs clarification before it can be described accurately.
 
 ## Content and security
 

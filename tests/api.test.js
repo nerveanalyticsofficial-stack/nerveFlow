@@ -58,6 +58,26 @@ test('admin login sets a signed HttpOnly cookie', async () => {
   delete process.env.SESSION_SECRET
 })
 
+test('an existing short admin password is accepted', async () => {
+  process.env.ADMIN_PASSWORD = 'short7'
+  process.env.SESSION_SECRET = 'a-secret-longer-than-thirty-two-characters-for-tests'
+  const res = response()
+  await sessionHandler(request('POST', { password: 'short7' }, { origin: 'http://localhost:4173' }), res)
+  assert.equal(res.status, 200)
+  delete process.env.ADMIN_PASSWORD
+  delete process.env.SESSION_SECRET
+})
+
+test('missing session secret reports the setup issue', async () => {
+  process.env.ADMIN_PASSWORD = 'current-password'
+  delete process.env.SESSION_SECRET
+  const res = response()
+  await sessionHandler(request('POST', { password: 'current-password' }, { origin: 'http://localhost:4173' }), res)
+  assert.equal(res.status, 503)
+  assert.match(res.body.error, /SESSION_SECRET/)
+  delete process.env.ADMIN_PASSWORD
+})
+
 test('cross-origin login is rejected', async () => {
   const res = response()
   await sessionHandler(request('POST', { password: 'anything' }, { origin: 'https://other.example' }), res)

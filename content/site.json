@@ -2,7 +2,7 @@
   "brand": {
     "name": "nerve analytics",
     "eyebrow": "BUSINESS SYSTEMS, BUILT WITH INTENT",
-    "email": "hello@nerveanalytics.com",
+    "email": "nerveanalytics.official@gmail.com",
     "phone": "",
     "whatsapp": "",
     "bookingUrl": "",
@@ -109,16 +109,6 @@
       { "title": "Build", "text": "We put the system into practice, refine it, and make it ready for daily use." }
     ]
   },
-  "foundersIntro": {
-    "eyebrow": "THE PEOPLE BEHIND NERVE",
-    "title": "A founding team that builds with you.",
-    "description": "We are three founders with a shared focus on useful technology and lasting client relationships. Individual introductions will be added here soon."
-  },
-  "founders": [
-    { "id": "founder-1", "slug": "founder-1", "name": "Founder profile 01", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false },
-    { "id": "founder-2", "slug": "founder-2", "name": "Founder profile 02", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false },
-    { "id": "founder-3", "slug": "founder-3", "name": "Founder profile 03", "role": "Co-founder", "summary": "Personal introduction coming soon.", "bio": "This founder's biography will be added soon.", "image": "", "linkedin": "", "visible": false }
-  ],
   "contact": {
     "eyebrow": "LET'S TALK",
     "title": "Your next chapter deserves a better system.",

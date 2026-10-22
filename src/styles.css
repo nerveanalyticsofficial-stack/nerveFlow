@@ -7,3 +7,5 @@
 @media(max-width:360px){.visual-wrap{transform:scale(.47);height:280px;margin-bottom:-65px}.hero-actions{gap:16px}.button{gap:15px}}
 
 .password-input{position:relative;display:flex;align-items:center}.password-input input{padding-right:47px}.password-input button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#527562;width:34px;height:34px;display:grid;place-items:center}.password-input button:hover{color:#1d5a46}
+
+.contact-method{display:flex;flex-direction:column;gap:5px;max-width:100%}.contact-method>span{color:#bfe6d6;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.contact-method>strong,.contact-method>a{color:#fff;font-family:Manrope,sans-serif;font-size:17px;font-weight:700;overflow-wrap:anywhere}.contact-method>a:hover{text-decoration:underline;text-underline-offset:4px}.contact-actions{min-width:0;max-width:100%}
